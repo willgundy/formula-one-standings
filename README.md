@@ -24,3 +24,71 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+![wireframe](assets/wireframe.png)
+
+To Do:
+1. HTML Outline
+2. Setup Tables
+3. Get Images into Supabase
+4. Fetch Data from Supabase
+5. Write render functions
+  - driver list page
+  - constructor list page
+  - driver detail page
+  - constructor detail page
+6. Write display functions
+
+
+HTML Configuration:
+
+Lists Page
+1. Header
+2. Main
+  - Button Div
+    - Button
+    - Button
+  - Drivers Section
+    - Div
+      - img
+      - p
+      - p
+      - p
+  - Constructors Section
+    - Div
+      - img
+      - p
+      - div
+        - p
+        - p
+      - p
+  
+Driver Detail Page
+1. Header
+2. Main
+  - Section
+    - Image
+    - Div
+      - p
+      - p
+      - p
+  - section
+    - h3
+    - p
+    - p
+
+Constructor Detail Page
+1. Header
+2. Main
+  - Section
+    - Image
+    - Div
+      - p
+      - p
+      - p
+  - section
+    - h3
+    - p
+    - p
+
