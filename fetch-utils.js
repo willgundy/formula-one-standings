@@ -25,7 +25,8 @@ export async function getSingleDriverDetail(driverId) {
     const response = await client 
         .from('f1_drivers')
         .select('*')
-        .match({ 'driverId': driverId });
+        .match({ 'driverId': driverId })
+        .single();
 
     return response.body;
 }

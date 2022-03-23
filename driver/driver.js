@@ -18,7 +18,7 @@ async function displayDriver() {
     
     const driverInformation = await getSingleDriverDetail(parameter.get('id'));
     
-    const detailsEl = renderDriverDetails(driverInformation[0]);
+    const detailsEl = renderDriverDetails(driverInformation);
 
     main.append(detailsEl);
 }
