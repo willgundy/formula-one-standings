@@ -17,12 +17,8 @@ async function displayDriver() {
     const parameter = new URLSearchParams(window.location.search);
     
     const driverInformation = await getSingleDriverDetail(parameter.get('id'));
-
-    console.log(driverInformation[0]);
     
     const detailsEl = renderDriverDetails(driverInformation[0]);
-
-    console.log(detailsEl);
 
     main.append(detailsEl);
 }
